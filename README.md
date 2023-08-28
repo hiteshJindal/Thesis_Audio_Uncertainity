@@ -9,6 +9,8 @@ I uploaded the file Mail_thesis_file_Noise_withoutspectrograms_16thAug_v3.ipynb 
 
 ## 27th August
 
-Today I upload final files NoSpectrogram_Experiment_27_Aug.ipynb and With_Spectrogram_Experiment_27_Aug.ipynb, where I now use now three most frequent labels obseravtions from the data and then analyze the accuracy and uncertainity using entropy per class for 3 classes only, and analyze what is the change in uncertainity is there when we use mel spectrograms with audio transcripts. We found out that ther
+Today I upload final files NoSpectrogram_Experiment_27_Aug.ipynb and With_Spectrogram_Experiment_27_Aug.ipynb, where I now use now three most frequent labels obseravtions from the data and then analyze the accuracy and uncertainity using entropy per class for 3 classes only, and analyze what is the change in uncertainity is there when we use mel spectrograms with audio transcripts. We found out that that uncertainity value values is very less when we use spectrogram with audio data as compared to the input with no spectrogrms, even there is a huge differece between the uncertainity values of the two categories. 
+
+It shows using Mel spectrograms or MFCC, the model is more confident in predicting the class label or likelihood phoneme in a particular range rather than without mel spectrograms.
 
 
