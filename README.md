@@ -1,16 +1,25 @@
 # Thesis_Audio_Uncertainity
 Feature Uncertainty from Audio Noise
 
-Here now I upload the files Mail_thesis_file_with_spectrograms and Mail_thesis_file_without_spectrograms where you can find both code before and after including mel spectrograms also there is an additional Mail_thesis_file_noise_with_spectrograms where I add noise in input data and perform the same steps.
+# 14th July
+
+I uploaded the files With_Spectrogram_Experiment_v05.ipynb and Without_Spectrogram_Experiment_v05.ipynb. The former file includes the code where the input for the model is both MFCC spectrogram + Audio Transcript, whereas in the later code file, has the model input only Audio Transcripts. The directory for the input files in the code files needs to be changed to include noisy audio files or to include noiseless audio files.
+
+There are also other code files such as:
+--> GenerateNoiseAudioFiles.ipynb - In this code file, random noise is added to all the WAV audio files.
+--> Merger_Files.ipynb - In this code file, the test and training data are merged together initially to include the oversampling technique and to lower the dimensionality of input data.
+--> Transcription_Generator_v05.ipynb - In this code file, we generate the transcription for audio wav files in the text format and store them in a different directory.
+--> Wav_Files_Generator_v05.ipynb - In this code file, mp3 audio files are converted to WAV format.
 
 ## 17th August
 
-I uploaded the file Mail_thesis_file_Noise_withoutspectrograms_16thAug_v3.ipynb today, here I added the code where I use the oversampling technique to balance the imbalance dataset and also I added the code for keras tuner and k fold cross validation to improve the Validation and test accuracy. After all the steps, validation accuracy reached 87%, whereas the test accuracy is around 50%.
+In the above code, I also added the code where I use the oversampling technique to balance the imbalance dataset and also I added the code for the Keras tuner and K-fold cross-validation to improve the Validation and test accuracy. After all the steps, validation accuracy reached 87%, whereas the test accuracy was around 50%.
 
 ## 27th August
 
-Today I upload final files NoSpectrogram_Experiment_27_Aug.ipynb and With_Spectrogram_Experiment_27_Aug.ipynb, where I now use now three most frequent labels obseravtions from the data and then analyze the accuracy and uncertainity using entropy per class for 3 classes only, and analyze what is the change in uncertainity is there when we use mel spectrograms with audio transcripts. We found out that that uncertainity value values is very less when we use spectrogram with audio data as compared to the input with no spectrogrms, even there is a huge differece between the uncertainity values of the two categories. 
+Today I also added the code, where I now use now three most frequent label obseravtions from the data and then analyze the accuracy and uncertainty using entropy per class for 3 classes only, and analyze what the change in uncertainty is there when we use MFCC spectrograms with audio transcripts. We found out that the uncertainty value values are very low when we use a spectrogram with audio data as compared to the input with no spectrograms, even though there is a huge difference between the uncertainty values of the two categories. 
 
-It shows using Mel spectrograms or MFCC, the model is more confident in predicting the class label or likelihood phoneme in a particular range rather than without mel spectrograms.
+It shows using Mel spectrograms or MFCC, the model is more confident in predicting the class label or likelihood phoneme in a particular range rather than without MFCC spectrograms.
+
 
 
